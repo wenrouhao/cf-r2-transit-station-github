@@ -1,0 +1,23 @@
+{
+	"name": "cf-r2-transit-station-github",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy --keep-vars",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.71",
+		"@cloudflare/workers-types": "^4.20251213.0",
+		"typescript": "^5.5.2",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.54.0"
+	},
+	"dependencies": {
+		"hono": "^4.12.3",
+		"valibot": "^1.2.0"
+	}
+}
